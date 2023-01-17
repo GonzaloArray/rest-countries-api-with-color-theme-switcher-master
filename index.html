@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Front-end mentor</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Nunito:wght@200;300;400;500;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/eadeaa3284.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="root">
+    <header class="rca-header">
+        <div class="container rca-flex">
+            <h1>Where in the world?</h1>
+            <button class="rca-button" id="dark-botton">
+                <i class="fa-solid fa-moon"></i>
+                <p>Dark mode</p>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main-flex">
+                <form class="main-form" id="formulario">
+                    <input id="search-form" class="main-form-input" type="text" placeholder="Search for a country...">
+                    <button type="submit" class="main-form-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <section class="main-filter">
+                    <select class="main-select" id="filter-flag" >
+                        <option value="region1" selected disabled>Filter by Region</option>
+                    </select>
+                </section>
+            </div>
+            <section id="contain-flag" class="main-flag">
+
+            </section>
+
+            <section class="main-control-button">
+                <button id="prev-page-button" class="main-button-config">Prev</button>
+                <button id="next-page-button" class="main-button-config">Next</button>
+            </section>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
